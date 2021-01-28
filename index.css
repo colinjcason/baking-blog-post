@@ -57,17 +57,37 @@ img {
     position: absolute;
     right: 15%;
     margin-top: 25px;
-}
-
-.sidebar-content {
+    font-family: var(--text-font);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.sidebar-content > p {
-    margin: 0;
+.yield {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.material-icons {
+    margin: 10px;
+}
+
+.utensil {
+    color: #F2994A;
+}
+
+.yield-servings {
+    color: #F2994A;
+}
+
+.yield-text {
+    color: #BDBDBD;
+    font-size: .6rem;
+}
+
+.yield-text > span {
+    font-size: .8rem;
 }
 
 .ingredients-title {
@@ -134,8 +154,11 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
+    .header-container {
+        grid-template-columns: 1% auto 1%;
+    }
+    .content-container {
+        grid-template-columns: 1% auto 1%;
     }
     .title {
         font-size: 1.5em;
@@ -146,17 +169,10 @@ img {
     .description {
         max-width: 70vw;
     }
-    .ingredients-title {
-        font-size: 1em;
-        margin-bottom: 0;
-    }
-    .ingredient-subtitle {
-        margin-bottom: 10px;
-    }
-    .ingredient {
-        font-size: 12px;
-    }
     .checkbox {
         margin: 10px;
+    }
+    .sidebar {
+        width: 150px;
     }
 }
